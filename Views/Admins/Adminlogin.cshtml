@@ -1,0 +1,13 @@
+﻿@model Onlineproducts.Models.Admin
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Welcome to Admin Login page</h2>
+<form method="post">
+<label>Enter Username: </label>@Html.TextBoxFor(c=>c.Adminname,new {@class="form-control"})<br/><br/>
+<label>Enter Password: </label>@Html.PasswordFor(c=>c.Adminpassword,new {@class="form-control"})<br/><br/>
+<input type="submit" value="Login" class="btn btn-primary" />
+</form>
+<div>@ViewData["uid"]</div>

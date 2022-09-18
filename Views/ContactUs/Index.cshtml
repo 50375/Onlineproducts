@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Onlineproducts.Models.ContactUs>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Contact Information</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Mailid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mailid)
+            </td>
+          
+        </tr>
+}
+    </tbody>
+</table>
